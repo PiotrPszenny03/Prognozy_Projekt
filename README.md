@@ -7,3 +7,5 @@ Projekt opiera się na bazie danych Prognozy_Baza_Danych.xlsx i składa się z t
 2. forecast_weather.py (Prognoza pomocnicza Holt-Wintersa) Skrypt odpowiedzialny za przygotowanie prognoz wartości zmiennych objaśniających (niezbędnych do wykonania prognozy warunkowej). Z wykorzystaniem modelu wygładzania wykładniczego Holt-Wintersa generuje prognozy out-of-sample dla zmiennej Pogoda na miesiące czerwiec-sierpień 2018. 
 
 3. conditional_forecast.py (Finałowa prognoza warunkowa) Główny skrypt agregujący wyniki i generujący docelową predykcję na 3 letnie miesiące (czerwiec-sierpień 2018). Łączy główny model OLS z zaprognozowanymi wartościami pogody (z modelu Holt-Wintersa) oraz wprowadzonymi prognozami wynagrodzeń. Poza predykcją, skrypt liczy teoretyczny margines błędu ex-ante oraz konfrontuje uzyskane wyniki z rzeczywiście zaobserwowanymi danymi w celu wyliczenia empirycznych błędów wygasłych (ex-post), takich jak RMSE czy MAPE.
+
+4. wynagrodzenia_prognoza.py (Niektóre prognozy wynagrodzeń) Dodatkowy plik zawierający 2 modele prognozujące zmienną wynagrodzenia
